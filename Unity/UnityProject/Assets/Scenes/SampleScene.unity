@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 649289084}
   - component: {fileID: 649289086}
   - component: {fileID: 649289087}
+  - component: {fileID: 649289088}
+  - component: {fileID: 649289089}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -214,13 +216,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 649289084}
   speed: 12
-  gravity: -9.81
+  gravity: -9.8
   jumpHeight: 5
   groundCheck: {fileID: 649289085}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &649289088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649289083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f12a680ee2113e4dadc31c453a83128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 649289084}
+  crouchSpeed: 2
+  normalHeight: 3.8
+  crouchHeight: 3.2
+  offset: {x: 0, y: 1.5, z: 0}
+  player: {fileID: 649289085}
+--- !u!114 &649289089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649289083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 006d9153ece87944d9c6baf8538003a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBoost: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
